@@ -17,10 +17,6 @@ public class VersioningResource {
 		return new PersonV2(new Name("Mohammed", "Najh"));
 	}
 
-
-
-
-
     @GetMapping(path = "/person", params = "version=1")
 	public PersonV1 getFirstVersionOfPersonRequestParameter() {
 		return new PersonV1("Bob Charlie");
